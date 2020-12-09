@@ -1,0 +1,138 @@
+Title:Online Food Ordering System
+
+Purpose:
+-------
+	The Online Food Ordering System for restaurants web appliction from which they offer food menu for customers through a single get way using the internet. Online ordering system helps to maintain a Better Business Relationship with your customers.
+With This system allowing the customer's to easily search require food, easily place the order and make payment without having to visiting the restaurant physically. 
+
+
+Scope:
+-----
+Ordering food online has two sides. The supplier side and the customer side.
+On the supplier side, you have restaurants, fast food joints and other food outlets. These food outlets register on an online food ordering app. After registration, they display their food menu along with the prices.
+On the customer side, you have people who eat at these food outlets. These people browse through the app and choose the items they want and order them.
+
+
+List of actors:
+--------------
+	Customers -> Register user
+	Food Supplier(Restaurents)
+	Admin
+
+
+Require Modules:
+---------------
+	1.Registration module
+	2.Food catalog module
+	3.Food Cart module
+	4.Payment Processing module
+	5.Shiping module
+
+
+Functional Requirement:
+---------- -----------
+This section provides requirement overview of the system. Various functional modules that can be implemented by the system will be-
+	
+	1)Customers -> Login -> Food List -> Place order -> Make payment -> Receive order 	confimation msg -> Logout
+
+	2)Restaurent -> Login -> check order -> collect Payment -> Logout
+
+	3)Admin -> Login -> List of Customer/List of Restaurent/List of Food items/
+	add food item/add restaurent list -> Logout
+
+Description:
+	Registration if customer wants to order the food then he/she must be registered, Unregistered user can not placed order.
+        Login Customer logins to the system by entering valid user id and password for using this system.
+	Payment:For making the payment two options will be avaiable to the customer-cash on delivery and online transactions(credit card,debit 	card,upi,paytm wallet)
+	Logout after the payment of the order food the customer will logged out.
+	
+        The term client/server refers primarily to an architecture or logical division of responsibilities, 
+        the client is the application (also known as the front-end), and the server is the RDBMS (also known as the back-end).
+        A client/server system is a distributed system in which,Some sites are client sites and others are server sites.
+        All the data resides at the server sites.
+        All applications execute at the client sites.
+Technical Issues:
+	This system will work on client-Server architecture. It will require an internet server.
+	The system should support some commonly used browser such as Chrome etc.
+	Interface Requirement Various interfaces for the product could be 
+	1.Login Page, 
+	2.Registration form
+    
+	There will be a screen displaying information about product that the shop having.
+
+	The customers may select the different options which will be open in another screen as
+		1.Login Page
+		2.Registration Form
+		3.Food item Page
+		4.Cart 
+                5.Shipping Details
+                6.Purchase history
+                7.Account  Settings
+                8.Payment Gateways
+	
+ Hardware Interface:
+	The System must run over the internet,
+        All the hardware shall require to connect to internet will be hardware interface for the system.
+		e.g. modem,  WAN, LAN
+		Specialized Server Infrastructure Hardware
+
+Non-Functional Requirements
+
+1.Security:
+	  SSL
+	The System use SSL (Secure Socket Layer) in all trancations that include any confidential customer information.
+	The system must automcatically log out all customers after a period of inactivity.
+	The system should not leave any cookies on the customer's computer containing users's password.
+	The system's back-end servers shall  only be accessible to authenticated administrators.
+	Sensitive data will be encrypted  before being sent onver insecure connections like internet.
+        The proper firewalls should be developed to avoid intrusions from the internal or external sources.
+
+
+2.Reliability:
+	The system provides storage of all databases on redundant computers with  automatic switchover. 
+	The main pillar of reliability of the system  is the backup of the database 
+	which is conitinously maintained and update to reflect  the most recenet changes.
+
+
+3: Availability:
+	The system should be available at all times.meaning the user can access it using web browser, 
+        only restricted by the down time of the server on which the system runs.
+        In case of a of a hardware failure or database corruption, a replacement page will be shown. 
+	uptime : It mean 24 * 7 availability
+	100%--------------
+	99.9%
+	99.999%
+	99.9999%
+
+
+4: Maintainability:
+	A commercial database is used for maintaining the databae and application server takes care of the site. 
+	The maintainability can be done efficiently.
+
+5.Portability:
+	The application is HTML and scripting language based (Javascript). So the end user part is fully portable and any system using 
+	any web browser should be able to use the features of the system,including any hardware platform that is available 
+	or will be available in the futuer. 
+	An end-user  is used this system on an OS;either it is Windows or Linux.
+	The System shall run on PC, Laptops and PDA.etc.
+	The  technology should be transferable to different environments easily.
+
+6.Accessibility:
+        Only registered users should be allowed to process the orders after authentications.
+        Only GUI access of the system should be permited to end users.
+
+7.Policies:
+       The system should adhere to all the legal formalities of the particular countries.
+       The system should maintain security related to sensitive data.
+
+8.Efficiency:
+	The system should provide good throughput and response to multiple users without burdening the system by using appropriate number of servers.
+
+9.Safety:
+      Software should not harm ethical and environmental conditions of the end users machine.
+
+10.Modulariy:
+      The system should have user friendly interface. 
+      It should be easily updated,modified and reused. 
+
+
